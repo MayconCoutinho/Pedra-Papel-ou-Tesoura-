@@ -101,9 +101,11 @@ def resultado_imagem():
     print('''
     
     
-    {0}
+  -=-=-=-=-=-=-=-=-=-=-=-=-=
+
+    {0}   
     
-    
+  -=-=-=-=-=-=-=-=-=-==-=-=  
     
     
     '''.format(resultado))
@@ -130,7 +132,7 @@ while sair != True:
 
 
     if jogador  == computador:
-        resultado = ('\33[1;33m Empate  \33[m')
+        resultado = ('\33[1;33m Empate 👌 \33[m')
         combate()
         sleep(3)
         resultado_imagem()
@@ -142,39 +144,39 @@ while sair != True:
             sleep(2)
             resultado_imagem()
         elif computador == 2:
-            print('\33[0;32m Você ganhou!\33[m')
+            print('\33[0;32m Você ganhou! 🏆 \33[m')
             combate()
             sleep(2)
             resultado_imagem()
 
     elif jogador == 2:
         if computador == 1:
-            resultado = ('\33[0;32m Você ganhou!\33[m')
+            resultado = ('\33[0;32m Você ganhou! 🏆 \33[m')
             combate()
             sleep(2)
             resultado_imagem()
 
         elif computador == 3:
-            resultado = ('\33[1;31m Você perdeu! \33[m')
+            resultado = ('\33[1;31m Você perdeu! 👎 \33[m')
             combate()
             sleep(2)
             resultado_imagem()
 
     elif jogador == 1:
         if computador == 2:
-            resultado = ('\33[1;31m Você perdeu! \33[m')
+            resultado = ('\33[1;31m Você perdeu! 👎\33[m')
             combate()
             sleep(2)
             resultado_imagem()
 
         elif computador == 3:
-            resultado = ('\33[0;32m Você ganhou! \33[m')
+            resultado = ('\33[0;32m Você ganhou! 🏆 \33[m')
             combate()
             sleep(2)
             resultado_imagem()
 
     elif jogador == 0:
-        print('Saindo ...')
+        print('Saindo ⌛..')
         sleep(3)
         print('Jogo finalizado')
         break
